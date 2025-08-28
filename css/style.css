@@ -46,6 +46,7 @@ section {
 
 .btn {
    border-radius: 10px;
+   transition: all 0.3s ease;
 }
 
 .btn-theme-yellow {
@@ -60,6 +61,22 @@ section {
    font-weight: 600;
 }
 
+.btn-theme-yellow:hover,
+.btn-theme-yellow:focus,
+.btn-theme-green:hover,
+.btn-theme-green:focus {
+   transform: translateY(-0.25em);
+}
+
+.btn-theme-green:hover,
+.btn-theme-green:focus {
+   box-shadow: 0 0.5em 0.5em -0.3em #0b3d21;
+}
+
+.btn-theme-yellow:hover,
+.btn-theme-yellow:focus {
+   box-shadow: 0 0.5em 0.5em -0.3em rgb(177, 182, 32);
+}
 .btn-theme-green:hover {
    color: #fff;
 }
@@ -73,6 +90,24 @@ section {
    color: #0d4e2b;
    font-weight: 600;
    padding: 0.5rem 0;
+   position: relative;
+}
+
+.btn-no-border-green::after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   transform: scaleX(0);
+   height: 1px;
+   bottom: 0;
+   left: 0;
+   background-color: #0d4e2b;
+   transition: transform 0.25s ease-out;
+   border-radius: 6px;
+}
+
+.btn-no-border-green:hover::after {
+   transform: scaleX(1);
 }
 
 .arrow-box-right {
@@ -194,8 +229,13 @@ section {
 }
 
 .card-column-content {
-   padding: 35px;
+   padding: 30px;
    min-height: 290px;
+   transition: transform 0.3s ease;
+}
+
+.card-column-content:hover {
+   transform: translateY(-5px);
 }
 
 .content-title {
@@ -422,6 +462,33 @@ section {
 
 .industry-bg-threecol .card-column-content {
    min-height: 268px;
+}
+
+.img-container {
+   position: relative;
+}
+
+/* fadeInUp effect */
+
+.animate__animated {
+   animation-duration: 1s;
+   animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+   from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+   }
+
+   to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+   }
+}
+
+.animate__fadeInUp {
+   animation-name: fadeInUp;
 }
 
 /* mediaqueries */
