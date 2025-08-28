@@ -411,6 +411,19 @@ section {
    color: #000;
    padding-bottom: 7px;
 }
+
+.footer-menu li a {
+   transition: all 0.3s ease-in-out;
+}
+
+.footer-menu li a:hover {
+   color: #ebf03b;
+}
+
+.industry-bg-threecol .card-column-content {
+   min-height: 268px;
+}
+
 /* mediaqueries */
 @media (max-width: 991px) {
    .navbar-collapse {
@@ -446,8 +459,10 @@ section {
    .footer .row > [class*='col-'] {
       margin-bottom: 15px;
    }
-   .inner-header-banner,
    .header-banner-content {
+      height: 70vh;
+   }
+   .inner-header-banner {
       height: 50vh;
    }
    .count-column::after {
@@ -461,7 +476,7 @@ section {
       margin-top: 15px;
    }
    .client-logos-grid {
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
    }
    .security-partners img {
       width: 40%;
@@ -484,5 +499,28 @@ section {
    }
    .contact-info-box .icon-column a {
       font-size: 18px;
+   }
+   .light-bg-container {
+      padding: 20px;
+   }
+   .card-column-content,
+   .overlay-border {
+      padding: 20px;
+   }
+   .light-bg-small-column .card-column-content {
+      min-height: auto;
+   }
+   .grid-section,
+   .cols-listing-wrap {
+      gap: 5px;
+   }
+   .social-icons {
+      justify-content: center;
+   }
+}
+
+@media (max-width: 360px) {
+   .large-title-head {
+      font-size: 21px;
    }
 }
