@@ -517,6 +517,16 @@ input.form-control:focus {
    animation-name: fadeInUp;
 }
 
+.icon-column {
+   padding: 25px;
+   border-radius: 20px;
+   transition: all 0.3s ease-in-out;
+}
+
+.icon-column:hover {
+   box-shadow: 0px 8px 10px -6px rgba(13, 16, 45, 0.1),
+      0px 20px 25px -5px rgba(13, 16, 45, 0.1);
+}
 /* mediaqueries */
 @media (max-width: 991px) {
    .navbar-collapse {
