@@ -261,6 +261,12 @@ section {
    max-width: 100%;
    height: auto;
    object-fit: contain;
+   transition: all 0.3s ease-in-out;
+   cursor: pointer;
+}
+
+.client-logos:hover img {
+   transform: translateY(-5px);
 }
 
 .center-banner-section {
@@ -438,12 +444,19 @@ section {
 
 .contact-form .form-control {
    border-radius: 10px;
-   border: 1px solid #0d4e2b;
+   border: 1px solid rgb(13, 78, 43);
 }
 
 .contact-form .form-control[type='text'],
 .contact-form .form-control[type='email'] {
    height: 70px;
+}
+
+textarea.form-control:focus,
+input.form-control:focus {
+   outline: 1px solid #0d4e2b;
+   box-shadow: 0 0.2rem 0.44rem rgb(13, 78, 43, 0.5);
+   border: none;
 }
 
 .contact-form label {
@@ -463,9 +476,22 @@ section {
 .industry-bg-threecol .card-column-content {
    min-height: 268px;
 }
-
+.left-col-image,
 .img-container {
    position: relative;
+}
+
+.left-col-image img,
+.img-container img {
+   transition-duration: 0.3s;
+   transition-property: transform;
+   transform: translateZ(0);
+   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.left-col-image img:hover,
+.img-container img:hover {
+   transform: scale(1.02);
 }
 
 /* fadeInUp effect */
