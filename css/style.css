@@ -465,10 +465,12 @@ input.form-control:focus {
    padding-bottom: 7px;
 }
 
+.contact-info a,
 .footer-menu li a {
    transition: all 0.3s ease-in-out;
 }
 
+.contact-info a:hover,
 .footer-menu li a:hover {
    color: #ebf03b;
 }
