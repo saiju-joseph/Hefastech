@@ -4,6 +4,7 @@ body {
 
 section {
    padding: 70px 0 0 0;
+   scroll-margin-top: 80px;
 }
 
 .section-bottom-padd {
@@ -289,6 +290,7 @@ section {
 
 .large-title-head {
    font-size: 34px;
+   line-height: 35px;
 }
 
 .count-bg {
