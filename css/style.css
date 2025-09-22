@@ -547,6 +547,12 @@ input.form-control:focus {
    }
 }
 
+@media (max-width: 768px) {
+   .navbar-brand {
+      width: 25%;
+   }
+}
+
 @media (max-width: 576px) {
    .home-header .banner-caption {
       width: 96%;
@@ -561,7 +567,9 @@ input.form-control:focus {
    .center-banner-section {
       padding: 15px;
    }
-
+   .footerlogo img {
+      width: 30%;
+   }
    .get-start-btns {
       display: flex;
       flex-direction: column;
